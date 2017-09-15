@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存" />
+
+                <Button
+                    android:id="@+id/main_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除" />
+
+                <Button
+                    android:id="@+id/main_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="白色" />
+
+                <Button
+                    android:id="@+id/main_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝色" />
+            </LinearLayout>
+            
+   <FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/finger_layout"  
+  >
+    <canvas.com.ImageEditTextView
+        android:id="@+id/main_image_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#C9DDFE"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top|left"
+        android:lineSpacingExtra="5dip"
+        android:lines="20"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:textColor="#000000"
+        android:textSize="50dip" >
+    </canvas.com.ImageEditTextView>
+
+    <canvas.com.HandTouchView
+        android:id="@+id/hand_touch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+    </canvas.com.HandTouchView>
+</FrameLayout>
+
+
+</LinearLayout>
